@@ -1,0 +1,89 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+
+
+
+
+
+/* HEADER */
+
+header
+{
+    background-color: #000;
+    width: 100%;
+    height: 90px;
+    padding: 10px;
+}
+
+header img
+{
+    width: 6%;
+}
+
+
+
+
+
+
+
+
+/* MAIN */
+
+
+main
+{
+    background-color: #3b505d;
+    width: 100%;
+    height: calc(100vh - 90px - 80px);
+    color: white;
+    overflow-y: scroll;
+}
+
+main .row img:hover
+{
+    transform: scale(1.05);
+}
+
+main .col-3:hover
+{
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+/* FOOTER */
+
+footer
+{
+    background-color: rgb(208, 219, 228);
+    height: 80px;
+}
+
+footer h5
+{
+    margin-top: 25px;
+}
+
+footer .d-flex img
+{
+    width: 2%;
+    margin-left: 18px;
+    margin-top: 20px;
+}
+
+
+footer .d-flex h5:hover, footer .d-flex img:hover
+{
+    cursor: pointer;
+}
