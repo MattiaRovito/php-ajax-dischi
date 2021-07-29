@@ -35,6 +35,9 @@
     <!-- VUE -->
     <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
 
+    <!-- FONT AWESOME -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     <!-- AXIOS -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js" integrity="sha512-bZS47S7sPOxkjU/4Bt0zrhEtWx0y0CRkhEp8IckzK+ltifIIE9EMIMTuT/mEzoIMewUINruDBIR/jJnbguonqQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
@@ -75,17 +78,25 @@
             </div>
         </main>
        
-        <footer>
-            <div class="d-flex">
-                <h5 class="fw-bold">Seguici sui social!</h5>
-                <div class="d-flex follow" v-for='logo in social'>
-                
-                    <img :src="logo" :alt="logo" >
     
-                </div> 
-            </div>
-        </footer>
+        <footer>
+            <div class="container">
 
+                <h5 class="fw-bold text-center pt-2">Follow us!</h5>
+
+                <div class="d-flex justify-content-center">
+
+                    <div v-for='logo in social' :class='logo.color'>
+                        <i :class="logo.social"></i>
+                    </div>
+
+                </div>
+
+            </div>
+            
+ 
+   
+        </footer>
 </div>
 
 

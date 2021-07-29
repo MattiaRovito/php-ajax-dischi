@@ -2,9 +2,21 @@
 
 
 $socials = [
-    'https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Facebook_f_logo_%282019%29.svg/1200px-Facebook_f_logo_%282019%29.svg.png',
-    'https://upload.wikimedia.org/wikipedia/it/0/09/Twitter_bird_logo.png',
-    'http://www.galiamanfrida.it/wp-content/uploads/2017/10/instagram-Logo-PNG-Transparent-Background-download.png',
-    'https://www.perazza.it/wp-content/uploads/2019/03/linkedin-logo-copy.png'
+    [
+        'social' => 'fab fa-twitter-square',
+        'color' => 'lightblue-twit'
+    ],
+    [
+        'social' => 'fab fa-facebook-square',
+        'color' => 'blue-face'
+    ],
+    [
+        'social' => 'fab fa-instagram-square',
+        'color' => 'orange-inst'
+    ],
+    [
+        'social' => 'fab fa-linkedin',
+        'color' => 'blue-link'
+    ]
 ];
 

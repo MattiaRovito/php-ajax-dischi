@@ -7,6 +7,31 @@
 
 
 
+.blue-face
+{
+    color: #1a73ea;
+}
+
+
+.lightblue-twit
+{
+    color: #4fc5f7;
+}
+
+.blue-link
+{
+    color: #0a63bc
+}
+
+.orange-inst
+{
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+    -webkit-background-clip: text;
+            /* Also define standard property for compatibility */
+            background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
 
 
 
@@ -41,7 +66,7 @@ main
 {
     background-color: #3b505d;
     width: 100%;
-    height: calc(100vh - 90px - 80px);
+    height: calc(100vh - 90px - 90px);
     color: white;
     overflow-y: scroll;
 }
@@ -67,23 +92,21 @@ main .col-3:hover
 footer
 {
     background-color: rgb(208, 219, 228);
-    height: 80px;
+    height: 90px;
 }
 
-footer h5
+
+
+footer i
 {
-    margin-top: 25px;
-}
-
-.follow img
-{
-    width: 20px;
-    /* margin-left: 18px;
-    margin-top: 20px; */
+    font-size: 36px;
+    padding: 5px;
+    margin-left: 10px;
 }
 
 
-footer .d-flex h5:hover, footer .d-flex img:hover
+
+footer .d-flex h5:hover, footer .d-flex i:hover
 {
     cursor: pointer;
 }
