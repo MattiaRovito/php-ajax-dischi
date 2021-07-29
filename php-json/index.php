@@ -10,11 +10,6 @@
 
 
 
-<!-- 
-<?php
-include __DIR__ . '../database/db.php';
-?>
--->
 
 
 
@@ -32,14 +27,13 @@ include __DIR__ . '../database/db.php';
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- MY CSS -->
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="css/style.css">
 
     <!-- CSS only -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
     <!-- VUE -->
     <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
-
 
     <!-- AXIOS -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js" integrity="sha512-bZS47S7sPOxkjU/4Bt0zrhEtWx0y0CRkhEp8IckzK+ltifIIE9EMIMTuT/mEzoIMewUINruDBIR/jJnbguonqQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
@@ -82,17 +76,14 @@ include __DIR__ . '../database/db.php';
         </main>
        
         <footer>
-            <div class="d-flex justify-content-center" >
+            <div class="d-flex">
+                <h5 class="fw-bold">Seguici sui social!</h5>
+                <div class="d-flex follow" v-for='logo in social'>
                 
-                <!-- <h5 class="fw-bold">Seguici sui social!</h5>
-            
-                <?php foreach($socials as $social) { ?>
-                
-                <img src="<?php echo $social ?>" alt="social">
-                
-                <?php } ?>   -->
-
-            </div> 
+                    <img :src="logo" :alt="logo" >
+    
+                </div> 
+            </div>
         </footer>
 
 </div>

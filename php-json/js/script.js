@@ -2,7 +2,9 @@ const app = new Vue({
     el: '#app',
     data: {
         url : 'api/api-db.php',
-        songs : ''
+        urlSocial : 'api/api-social.php',
+        songs : '',
+        social : '',
       
     },
     methods: {
@@ -19,5 +21,16 @@ const app = new Vue({
             .catch(error => {
                 console.log(error);
             })
+        axios 
+            .get(this.urlSocial)
+            .then(res => {
+                // console.log(res.data);
+                this.social = res.data;
+                // console.log(this.social);
+            })
+            .catch(error => {
+                console.log(error);
+            })
+
     }
 })
