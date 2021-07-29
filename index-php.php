@@ -40,7 +40,7 @@ include __DIR__ . '../database/db.php';
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- MY CSS -->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
 
     <!-- CSS only -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
@@ -58,7 +58,9 @@ include __DIR__ . '../database/db.php';
 
 
 <main>
+    <h2 class="p-3"> La tua playlist:</h2>
     <div class="container">
+        
 
         <div class="row">
             <?php foreach($songs as $song) { ?>
@@ -73,7 +75,7 @@ include __DIR__ . '../database/db.php';
                     <p>
                         <?php echo $song['year'] ?>
                     </p>
-                    <img src="<?php echo $song['poster'] ?>" alt="img" class="w-75" >
+                    <img src="<?php echo $song['poster'] ?>" alt="<?php echo $song['title'] ?>" class="w-75" >
                 </div>
             
             <?php } ?>
